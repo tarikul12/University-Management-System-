@@ -1,0 +1,394 @@
+/* Carousel Container */
+.carousel-inner {
+    position: relative;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 500px; /* Adjust the height as per your requirement */
+  }
+  
+  .bottom-center {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .carousel-item h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Top-left Logo Styling */
+  .top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .top-left img.logo {
+    width: 100px; /* Adjust size */
+    height: auto;
+  }
+  
+  /* Top-right buttons and text */
+  .top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+  }
+  
+  .top-right h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .top-right button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .top-right button:hover {
+    background-color: #0056b3; /* Hover effect */
+  }
+  
+  /* Carousel Control Icons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for icons */
+    border-radius: 50%;
+  }
+  
+  .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+/* General Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Notices Section */
+  .notices {
+    width: 65%;
+  }
+  
+  .notices h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .notice-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    width: 60px;
+  }
+  
+  .date.red {
+    background-color: #dc3545; /* Red background for urgent notices */
+  }
+  
+  .date .day {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .date .month {
+    font-size: 16px;
+  }
+  
+  .content a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Archive Link */
+  .archive {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .archive a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .archive a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media Section */
+  .social-media {
+    width: 30%;
+  }
+  
+  .social-media h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .social-media .video {
+    margin-bottom: 20px;
+  }
+  
+  .social-media .icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .social-media .icons a {
+    font-size: 32px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .social-media .icons a:hover {
+    color: #007bff;
+  }
+  
+  /* Social Media Course Section */
+  .course {
+    text-align: center;
+  }
+  
+  .course img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .notices, .social-media {
+      width: 100%;
+    }
+  }
+/* General Container Styles */
+.container {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Styles */
+  .header {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* News Grid Layout */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Container for the news grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+  gap: 20px; /* Space between items */
+  margin-top: 20px;
+}
+
+/* News item styling */
+.news-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 10px;
+}
+
+.news-date {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.news-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive design: adjust grid for smaller screens */
+@media (max-width: 1024px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .news-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+
+  
+  /* Facts and Figures styling */
+  .facts-figures {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .facts-figures h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .figures {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .figure {
+    text-align: center;
+  }
+  
+  .figure h3 {
+    font-size: 36px;
+    color: #007bff;
+  }
+  
+  .figure p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Container styling */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Section title styling */
+  .section-title {
+    margin-bottom: 20px;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Cards container styling */
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Individual card styling */
+  .card {
+    background-color: #f9f9f9;
+    width: calc(25% - 20px); /* Four cards per row with gap */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .card img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 1024px) {
+    .cards {
+      justify-content: space-around;
+    }
+    .card {
+      width: calc(45% - 20px); /* Two cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* One card per row */
+    }
+  }
+  

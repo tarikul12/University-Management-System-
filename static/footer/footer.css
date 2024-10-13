@@ -1,0 +1,128 @@
+/* Footer container */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+  }
+  
+  /* Footer logo and address styling */
+  .footer-logo {
+    flex-basis: 25%;
+    text-align: left;
+  }
+  
+  .footer-logo img {
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo address {
+    font-style: normal;
+    color: #ccc;
+  }
+  
+  .footer-logo a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-logo a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer links sections styling */
+  .footer-links {
+    flex-basis: 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Footer bottom section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom strong {
+    color: #fff;
+  }
+  
+  .footer-social {
+    margin-top: 10px;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .footer-social a:hover {
+    color: #1e90ff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-logo, .footer-links {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    .footer-links {
+      margin-top: 20px;
+    }
+  
+    .footer-links h3 {
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,191 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header img {
+    height: 50px;
+  }
+  .header .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .header .nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+  }
+  .header .user-info {
+    display: flex;
+    align-items: center;
+  }
+  .header .user-info span {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  .header .user-info i {
+    color: #007bff;
+    margin-left: 10px;
+  }
+  .sidebar {
+    width: 200px;
+    background-color: #003366;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-top: 70px;
+  }
+  .sidebar a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #004080;
+  }
+  .sidebar a:hover {
+    background-color: #004080;
+  }
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  .info-box {
+    background-color: #e6ffe6;
+    border: 1px solid #b3ffb3;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .info-box p {
+    margin: 0;
+  }
+  .info-box .credentials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info-box .credentials div {
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #b3ffb3;
+  }
+  .info-box .credentials button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .warning-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .warning-box a {
+    color: #856404;
+    text-decoration: none;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .buttons button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .buttons button:nth-child(2) {
+    background-color: #007bff;
+  }
+  .buttons button:nth-child(3) {
+    background-color: #28a745;
+  }
+  .class-schedule,
+  .registration {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  .class-schedule h2,
+  .registration h2 {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+  }
+  .class-schedule table,
+  .registration .courses {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .class-schedule table th,
+  .class-schedule table td,
+  .registration .courses .course {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  .class-schedule table th {
+    background-color: #f2f2f2;
+  }
+  .registration .courses {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .registration .courses .course {
+    width: 30%;
+    background-color: #f2f2f2;
+  }
+  .registration .courses .course h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  .registration .courses .course p {
+    margin: 5px 0;
+  }
+  .registration .courses .course .status {
+    display: flex;
+    justify-content: space-between;
+  }
+  .registration .courses .course .status span {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  .registration .courses .course .status span.open {
+    background-color: #007bff;
+  }
+  .registration .courses .course .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .registration .courses .course .actions button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .registration .courses .course .actions button:nth-child(2) {
+    background-color: #ffc107;
+  }
+  .registration .courses .course .actions button:nth-child(3) {
+    background-color: #dc3545;
+  }

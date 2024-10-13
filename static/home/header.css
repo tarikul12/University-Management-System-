@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0056b3; /* Dark blue background */
+    padding: 10px 20px;
+}
+
+.top-bar .logo {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-icons {
+    display: flex;
+    align-items: center;
+}
+
+.top-icons a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.top-icons i {
+    margin-right: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+.search-bar button i {
+    font-size: 0.9rem;
+}
+
+/* Navbar */.nav-item {
+    margin-right: 220px; /* Adjust the spacing as needed */
+}
+
+
+
+/* Sub-Menu */
+.sub-menu {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+}
+
+.sub-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-menu li {
+    margin: 0 15px;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sub-menu a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu, .sub-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li, .sub-menu li {
+        margin-bottom: 10px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-icons {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,74 @@
+{% load static %}
+
+<link href="{% static 'home/header.css' %}" rel="stylesheet" type="text/css"/>
+
+<header>
+    <div class="top-bar">
+      <a href="#" class="logo">
+          American International University-Bangladesh
+      </a>
+      <div class="top-icons">
+          <div class="search-bar">
+              <input type="text" placeholder="Search">
+              <button><i class="fas fa-search"></i></button>
+          </div>
+          <a href="{% url 'login' %}"><i class="fas fa-user"></i>Login</a>
+          {% comment %} <a href="{% url 'register' %}"><i class="fas fa-user"></i>Register</a> {% endcomment %}
+          <a href=""><i class="fas fa-envelope"></i> Web Mail</a>
+          <a href=""><i class="fas fa-phone"></i> Contact Us</a>
+      </div>
+  </div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg">
+    <div class="container">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-5"> <!-- Add consistent margin -->
+                <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="#">ACADEMICS</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="#">ADMISSION</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'images/logo.jpeg' %}" class="nav-logo" />
+                </a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="#">ON CAMPUS</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="#">ADMINISTRATION</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="#">RESEARCH</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% comment %} 
+<!-- Sub-menu -->
+<nav class="sub-menu bg-light py-2">
+    <div class="container">
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item mx-3"> <!-- Add consistent margin -->
+                <a class="nav-link" href="#">Alumni</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Visitors</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Future Students</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Convocation</a>
+            </li>
+        </ul>
+    </div>
+</nav> {% endcomment %}
+
+
+</header>

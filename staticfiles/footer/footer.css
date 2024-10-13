@@ -1,0 +1,88 @@
+/* General footer styles */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-logo address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.footer-links div {
+    margin-right: 10px;
+}
+
+.footer-links h3 {
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #00aced;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.footer-social {
+    margin-top: 5px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #00aced;
+}
